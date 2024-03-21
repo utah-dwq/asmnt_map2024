@@ -1,6 +1,8 @@
 setwd("/Users/alanochoa/Documents/GitHub/asmnt_map2024/")
 library(leaflet)
 
+#Does the main directory being referenced here need to be commented out for hosting on GitHub Pages? Just use second direct directory?
+#assessments=read.csv(file="/Users/alanochoa/Documents/GitHub/IR-2024/2024Draft/2024_IR_draft.csv")
 assessments=read.csv(file="2024_IR_draft.csv")
 
 
@@ -69,7 +71,7 @@ map=leaflet()%>%
       autoCollapse = TRUE, hideMarkerOnCollapse = TRUE ))
 
 htmlwidgets::saveWidget(map, "index.html", title="Utah 2024 IR submission")
-
+getwd()
 ####################################################
 # To deploy:
 # run code and export save map as html widget ("index.html")

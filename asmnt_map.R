@@ -1,4 +1,15 @@
 setwd("/Users/alanochoa/Documents/GitHub/asmnt_map2024/")
+
+aup=wqTools::au_poly
+
+library(sf)
+# 
+# # Define the file path where you want to save the shapefile
+# output_path <- "/Users/alanochoa/Documents/GitHub/asmnt_map2024/au_poly/au_poly.shp"
+# 
+# # Save the sf object as a shapefile
+# st_write(aup, output_path)
+
 library(leaflet)
 
 #Does the main directory being referenced here need to be commented out for hosting on GitHub Pages? Just use second direct directory?
